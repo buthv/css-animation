@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element{
+  width: 100px;
+  height: 100px;
+  
+  background-color: yellow;
+  
+  /* apply the animation */
+  animation-name: changeColors;
+  animation-duration: 3s;
+  /* add a delay */
+  animation-delay: 0s;
+  /* add a timing function */
+  animation-timing-function: ease-in-out;
+  /* how many times should it play out */
+  animation-iteration-count: infinite;
+  /* the direction of the animation */
+  animation-direction: normal;
+  /* pause or play the animation */
+  animation-play-state: running;
+  
+  animation-fill-mode: forwards; 
+}
+
+.element:hover{
+  animation-play-state: paused;
+}
+
+@keyframes changeColors{
+  0% {
+    background-color: skyblue;
+  }
+  33% {
+    background-color: mediumpurple;
+    width: 200px;
+  }
+  66% {
+    background-color: hotpink;
+  }
+  100% {
+    background-color: skyblue;
+    width: 200px;
+  }
+}
