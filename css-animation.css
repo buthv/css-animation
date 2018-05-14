@@ -45,9 +45,12 @@ body{
   33% {
     background-color: mediumpurple;
     width: 200px;
+    height: 200px;
   }
   66% {
     background-color: hotpink;
+    width: 200px;
+    height: 300px;
   }
   100% {
     background-color: skyblue;
