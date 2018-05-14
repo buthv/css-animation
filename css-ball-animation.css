@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element{
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50px;
+  background-color: orchid;
+  
+  position: relative;
+  
+  animation-name: ball-bounce;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball-bounce{
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  
+  100% {
+    top: 0;
+  }
+}
