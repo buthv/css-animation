@@ -39,6 +39,7 @@ body{
   width: 100px;
   height: 100px;
   border-radius: 100px;
+  box-shadow: 0px 0px 50px lightyellow;
   
   background-color: lightgoldenrodyellow;
   position: relative;
@@ -111,7 +112,7 @@ body{
     background-color: lightgoldenrodyellow;
   }
   50%{
-    top: -60px;
+    top: -70px;
     background-color: #ffff7f;
   }
   90%{
@@ -144,9 +145,9 @@ body{
     top: 100px;
   }
   50% {
-    top: 30px;
+    top: 40px;
   }
-  70%{
+  60%{
     top: 100px;
   }
 }
