@@ -26,12 +26,13 @@ body{
   
   /* apply animation */
   animation-name: changeBgColor;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction:normal;
   animation-play-state:running;
   animation-fill-mode: forwards; 
+  animation-timing-function: ease-in-out;
 }
 
 .sun{
@@ -41,6 +42,13 @@ body{
   
   background-color: lightgoldenrodyellow;
   position: relative;
+  left: 200px;
+  
+  animation-name: sun;
+  animation-duration: 6s;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .sea {
@@ -60,5 +68,24 @@ body{
   }
   100% {
     background-color: #ff6666;
+  }
+}
+
+@keyframes sun{
+  0%{
+    bottom: 0;
+    background-color: lightgoldenrodyellow;
+  }
+  50%{
+    bottom: 200px;
+    background-color: #ffff7f;
+  }
+  99%{
+    bottom: 2px;
+    background-color: orange;
+  }
+  }
+  100% {
+    bottom: 0;
   }
 }
