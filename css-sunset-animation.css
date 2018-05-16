@@ -59,6 +59,7 @@ body{
   height: 80px;
   width: 600px;
   background-color: #006699;
+  top: 50px;
   
   /* apply animation */
   animation-name: seaColor;
@@ -83,7 +84,7 @@ body{
 .whale{
   width: 70px;
   left: 300px;
-  top: 100px;
+  top: 130px;
   position: relative;
   
    /* apply animation */
@@ -91,6 +92,21 @@ body{
   animation-duration: 6s;
   animation-delay: 0s;
   animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+}
+
+.snail{
+  width: 50px;
+  position: relative;
+  top: 20px;
+  left: 200px;
+  z-index: 1;
+  
+  /* apply animation */
+  animation-name: snail;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count:infinite;
 }
 
@@ -142,13 +158,22 @@ body{
 
 @keyframes whale{
   30% {
-    top: 100px;
+    top: 120px;
   }
   50% {
-    top: 40px;
+    top: 80px;
   }
   60%{
-    top: 100px;
+    top: 130px;
+  }
+}
+
+@keyframes snail{
+  0%{
+    left: 100px;
+  }
+  100%{
+    left: 200px;
   }
 }
 
