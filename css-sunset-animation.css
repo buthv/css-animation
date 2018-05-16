@@ -81,17 +81,18 @@ body{
   /* apply animation */ 
 }
 
-.whale{
-  width: 70px;
-  left: 300px;
-  top: 130px;
+.boat{
+  width: 30px;
+  left: 340px;
+  top: 70px;
   position: relative;
+  z-index: 1;
   
    /* apply animation */
-  animation-name: whale;
+  animation-name: boat;
   animation-duration: 6s;
   animation-delay: 0s;
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
   animation-iteration-count:infinite;
 }
 
@@ -99,7 +100,7 @@ body{
   width: 50px;
   position: relative;
   top: 20px;
-  left: 200px;
+  left: 80px;
   z-index: 1;
   
   /* apply animation */
@@ -156,21 +157,24 @@ body{
   }
 }
 
-@keyframes whale{
-  30% {
-    top: 120px;
+@keyframes boat {
+  0% {
+    left: 340px;
+    top: 75px;
   }
-  50% {
-    top: 80px;
+  10% {
+    left: 345px;
+    top: 70px;
   }
-  60%{
-    top: 130px;
+  80%{
+    left: 340px;
+    top: 75px;
   }
 }
 
 @keyframes snail{
   0%{
-    left: 100px;
+    left: 80px;
   }
   100%{
     left: 200px;
