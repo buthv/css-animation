@@ -105,9 +105,9 @@ body{
   
   /* apply animation */
   animation-name: snail;
-  animation-duration: 6s;
+  animation-duration: 20s;
   animation-delay: 0s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-iteration-count:infinite;
 }
 
@@ -116,11 +116,14 @@ body{
   0% {
     background-color:  #8D9EA3;
   }
-  50% {
+  40% {
     background-color: skyblue;
   }
-  100% {
+  80%{
     background-color: #ff6666;
+  }
+  100% {
+    background-color: #191970;
   }
 }
 
@@ -128,16 +131,17 @@ body{
   0%{
     background-color: lightgoldenrodyellow;
   }
-  50%{
+  40%{
     top: -70px;
     background-color: #ffff7f;
   }
-  90%{
+  80%{
     background-color: orange;
     top: 140px;
   }
-  99% {
-    top: 150px;
+  100% {
+    background-color: #660033;
+    top: 200px;
   }
 }
 
@@ -148,12 +152,15 @@ body{
   33% {
     background-color: #49bfca;
   }
-  66% {
+  50% {
     background-color: #61c8d1;
     height: 100px;
   }
-  100% {
+  70% {
     background-color: #5b1c15;
+  }
+  100%{
+    background-color: #330033;
   }
 }
 
@@ -174,10 +181,10 @@ body{
 
 @keyframes snail{
   0%{
-    left: 80px;
+    left: 30px;
   }
   100%{
-    left: 200px;
+    left: 420px;
   }
 }
 
