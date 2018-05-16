@@ -44,6 +44,7 @@ body{
   position: relative;
   left: 200px;
   
+  /* apply animation */
   animation-name: sun;
   animation-duration: 6s;
   animation-delay: 0;
@@ -53,17 +54,36 @@ body{
 
 .sea {
   position: relative;
-  height: 100px;
+  height: 80px;
   width: 600px;
-  background: #e0efe3;
+  background-color: #006699;
+  
+  /* apply animation */
+  animation-name: seaColor;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  animation-play-state:running;
+  animation-fill-mode: forwards; 
+  animation-timing-function: ease-in-out;
 }
 
+.sand {
+  position: relative;
+  height: 50px;
+  width: 600px;
+  background-color:  #f3cbaf;
+  
+  /* apply animation */
+  
+}
 /* keyframes */
 @keyframes changeBgColor{
   0% {
     background-color:  #8D9EA3;
   }
-  60% {
+  50% {
     background-color: skyblue;
   }
   100% {
@@ -80,7 +100,7 @@ body{
     bottom: 200px;
     background-color: #ffff7f;
   }
-  99%{
+  90%{
     bottom: 2px;
     background-color: orange;
   }
@@ -88,4 +108,21 @@ body{
   100% {
     bottom: 0;
   }
+
+@keyframes seaColor{
+  0% {
+    background-color: #1c507d;
+  }
+  33% {
+    background-color: #49bfca;
+  }
+  66% {
+    background-color: #61c8d1;
+    height: 100px;
+  }
+  100% {
+    background-color: #5b1c15;
+  }
 }
+
+
