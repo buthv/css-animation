@@ -116,7 +116,7 @@ body{
   0% {
     background-color:  #8D9EA3;
   }
-  40% {
+  40%,60% {
     background-color: skyblue;
   }
   80%{
@@ -131,13 +131,13 @@ body{
   0%{
     background-color: lightgoldenrodyellow;
   }
-  40%{
+  40%,60%{
     top: -70px;
     background-color: #ffff7f;
   }
-  80%{
+  80% {
     background-color: orange;
-    top: 140px;
+    top: 160px;
   }
   100% {
     background-color: #660033;
@@ -156,7 +156,7 @@ body{
     background-color: #61c8d1;
     height: 100px;
   }
-  70% {
+  90% {
     background-color: #5b1c15;
   }
   100%{
