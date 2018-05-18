@@ -16,7 +16,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: steps(4,start);
   animation-fill-mode: forwards;
-  animation-direction: normal;
+  animation-direction:normal;
 }
 
 .sprite:hover{

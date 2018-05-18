@@ -188,5 +188,54 @@ body{
   }
 }
 
+.coconut{
+  width: 50px;
+  height: 90px;
+  border: 2px solid red;
+  z-index: 2;
+  
+  background-image: url(coconut-illustration-01.png);
+  background-position: 0 0;
+  
+  animation-name: coconutAnimation;
+  animation-duration: 2s;
+  animation-timing-function: steps(4,start);
+  animation-iteration-count: infinite;
+  animation-fill-mode:forwards;
+  animation-direction:normal;
+}
 
+@keyframes coconutAnimation{
+  0%{
+    background-position: 0 top;
+  }
+  100%{
+    left: 50px;
+    background-position: 0 360px;
+  }
+}
 
+.walk {
+  width: 50px;
+  height: 90px;
+  z-index: 1;
+  
+  position: relative;
+  top: 0;
+  left: 0;
+  
+  animation-name: movingforwards;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes movingforwards{
+  0% {
+      left: 0;
+  }
+  100%{
+    left: 500px;
+  }
+}
