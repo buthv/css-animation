@@ -13,6 +13,8 @@ body{
 }
 
 .container{
+  
+  position: relative;
   width: 500px;
   height: 500px;
   border-radius: 500px;
@@ -191,17 +193,14 @@ body{
 .coconut{
   width: 50px;
   height: 90px;
-  border: 2px solid red;
-  z-index: 2;
   
-  background-image: url(coconut-illustration-01.png);
+  background-image: url(img/coconut-illustration-01.png);
   background-position: 0 0;
   
   animation-name: coconutAnimation;
   animation-duration: 2s;
   animation-timing-function: steps(4,start);
   animation-iteration-count: infinite;
-  animation-fill-mode:forwards;
   animation-direction:normal;
 }
 
@@ -211,23 +210,21 @@ body{
   }
   100%{
     left: 50px;
-    background-position: 0 360px;
+    background-position: 0 -360px;
   }
 }
 
 .walk {
   width: 50px;
   height: 90px;
+  
+  position: absolute;
   z-index: 1;
   
-  position: relative;
-  top: 0;
-  left: 0;
-  
   animation-name: movingforwards;
-  animation-duration: 10s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
 }
 
@@ -236,6 +233,6 @@ body{
       left: 0;
   }
   100%{
-    left: 500px;
+    left: 400px;
   }
 }
