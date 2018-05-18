@@ -26,7 +26,7 @@ body{
   
   /* apply animation */
   animation-name: changeBgColor;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction:normal;
@@ -48,7 +48,7 @@ body{
   
   /* apply animation */
   animation-name: sun;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-delay: 0;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -63,7 +63,7 @@ body{
   
   /* apply animation */
   animation-name: seaColor;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction:normal;
@@ -90,7 +90,7 @@ body{
   
    /* apply animation */
   animation-name: boat;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-delay: 0s;
   animation-timing-function: linear;
   animation-iteration-count:infinite;
@@ -137,7 +137,7 @@ body{
   }
   80% {
     background-color: orange;
-    top: 160px;
+    top: 140px;
   }
   100% {
     background-color: #660033;
@@ -152,15 +152,15 @@ body{
   33% {
     background-color: #49bfca;
   }
-  50% {
+  40%,60% {
     background-color: #61c8d1;
     height: 100px;
   }
-  90% {
+  80% {
     background-color: #5b1c15;
   }
   100%{
-    background-color: #330033;
+    background-color: #213465;
   }
 }
 
