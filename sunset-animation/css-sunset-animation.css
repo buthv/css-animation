@@ -198,10 +198,10 @@ body{
   background-position: 0 0;
   
   animation-name: coconutAnimation;
-  animation-duration: 2s;
+  animation-duration: 0.6s;
   animation-timing-function: steps(4,start);
   animation-iteration-count: infinite;
-  animation-direction:normal;
+  animation-direction: normal;
 }
 
 @keyframes coconutAnimation{
@@ -225,7 +225,7 @@ body{
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
+  animation-timing-function: ease-out;
 }
 
 @keyframes movingforwards{
